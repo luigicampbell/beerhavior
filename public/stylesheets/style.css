@@ -1,0 +1,230 @@
+/* Mobile */
+@media screen and (max-width: 992px) {
+  * {
+    font-size: 1.2em;
+    color: #fafafa;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px #3e2723;
+    text-decoration: none;
+    text-align: center;
+  }
+  p{
+    margin: 15px;
+    text-align: justify;
+    text-overflow: ellipsis;
+  }
+  .wrapper-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+  }
+  .wrapper-menu.open {
+    transform: rotate(-45deg);
+  }
+  .line-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+  }
+  .line-menu.half {
+    width: 50%;
+  }
+  .line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+  }
+  .open .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+    z-index: 99;
+  }
+
+  .line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+  }
+  .open .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+    z-index: 99;
+  }
+  #burger {
+    z-index: 99;
+    position: absolute;
+    top: 28px;
+    right: 53px;
+    text-shadow: 1px 1px 1px #3e2723;
+  }
+  .current-page {
+    font-size: 2em;
+    background-color: #3e2723;
+    /* text-align: center; */
+    text-shadow: 1px 1px 10px #3e2723;
+    position: relative;
+    padding: 40px;
+    box-shadow: 0px 0px 50px 0px #757575;
+  }
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .billboard{
+    grid-row: span 3;
+    grid-column: span 3;
+    margin-bottom: 25px;
+  }
+  .container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  html, body {
+    background-color: #bcaaa4;
+    margin: 1px;
+  }
+  .container>div:nth-child(n){
+    background-color: #448aff;
+    box-shadow: 1px 1px 10px 1px #3e2723;
+  }
+  .container>div:nth-child(2n){
+    background-color: #ff9800;
+    box-shadow: 1px 1px 10px 1px #3e2723;
+  }
+  .container>div:nth-child(3n){
+    background-color: #00e676;
+    box-shadow: 1px 1px 10px 1px #3e2723;
+  }
+  .container>div:nth-child(4n){
+    background-color: #00796b;
+    box-shadow: 1px 1px 10px 1px #3e2723;
+  }
+  .container {
+    display: grid;
+    margin: 10px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 275px;
+    grid-auto-flow: dense;
+  }
+  .horizontal {
+    grid-column: span 2;
+  }
+
+  .vertical {
+    grid-row: span 2;
+  }
+
+  .big {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: line-through;
+
+  }
+}
+/* Desktop */
+* {
+  font-size: 1.2em;
+  color: #fafafa;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px #3e2723;
+  text-decoration: none;
+}
+.current-page {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.current-page a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.overlay {
+    float: left;
+    overflow: hidden;
+}
+
+.overlay .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.current-page a:hover, .overlay:hover .dropbtn {
+    background-color: red;
+}
+
+.overlay-content {
+    display: none;
+    position: absolute;
+    background-color: #bcaaa4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.overlay-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.overlay-content a:hover {
+    background-color: #ddd;
+}
+
+.overlay:hover .overlay-content {
+    display: block;
+}
