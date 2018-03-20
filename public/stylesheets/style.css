@@ -160,7 +160,7 @@
 /* Desktop */
 @media screen and (min-width: 992px) {
   * {
-    font-size: .5em;
+    font-size: 1em;
     color: #fafafa;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
