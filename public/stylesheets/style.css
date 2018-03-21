@@ -215,7 +215,7 @@
     display: block;
   }
   .billboard{
-    grid-row: span 3;
+    grid-row: span 2;
     grid-column: 1 / -1;
     margin-bottom: 25px;
     box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.2);
