@@ -10,9 +10,8 @@ function openNav() {
   console.log(`opened ${x}`);
   var elem = document.getElementsByClassName('drpbtn');
     elem[0].parentNode.removeChild(elem[0]);
-    var elem2 = document.getElementsByClassName('fa fa-caret-down');
-      elem2[0].parentNode.removeChild(elem2[0]);
     return false;
+    
 }
 
 function closeNav() {
