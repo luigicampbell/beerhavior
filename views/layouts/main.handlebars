@@ -5,6 +5,7 @@
   <title>Project Two</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 <body>
   <!-- Navbar-->
@@ -13,8 +14,14 @@
     <div class="line-menu"></div>
     <div class="line-menu half end"></div>
   </div>
-
-  <div id="navbar" class="overlay" style="height: 0%">
+  <div id ="app">
+      <input id="Email" type="email" placeholder="Email">
+      <input id="Password" type="password" placeholder="Password">
+      <button id="register" class="btn btn-secondary">Register</button>
+      <button id="signIn" class="btn btn-secondary">Sign In</button>
+      <button id="logOut" class="btn btn-action hide">Log out</button>
+    </div>
+  <div id="navbar" class="overlay mytransition active" style="height: 0%">
     <button class="drpbtn">Dropdown<i class="fa fa-caret-down"></i></button>
     <div class="overlay-content">
       <a href="index.html"><span>Beer</span></a>
@@ -22,12 +29,16 @@
       <a href="contact.html"><span>Buuuurp</span></a>
     </div>
   </div>
+  <div id="firebaseui-auth-container"></div>
 
+      <div id="loader"></div>
   {{{body}}}
 
   <!-- Footer -->
   <div class="current-page">Footer</div>
   <!-- JS -->
   <script src="/javascripts/logic.js"></script>
+  <script src="/javascripts/firebase.js"></script>
+  <script src="/javascripts/yelp.js"></script>
 </body>
 </html>

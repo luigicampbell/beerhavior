@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 // var cookieParser = require('cookie-parser');
 
 var index = require('./routes/index');
+// var brewerySearch = require('./routes/index/alcolulz');
 var app = express();
 
 // view engine setup
