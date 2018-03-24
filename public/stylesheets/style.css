@@ -148,4 +148,8 @@
     margin-left: -325px;
     padding-bottom: 40px;
   }
+  #logo{
+    max-width: 200px;
+    max-height: 15px;
+  }
 }
