@@ -1,9 +1,10 @@
+require('dotenv').config();
+
 var express = require('express');
 var exphbs  = require('express-handlebars');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-
 // Using cookies?
 // var cookieParser = require('cookie-parser');
 
